@@ -26,7 +26,7 @@ body {
   perspective: 1000px;
 }
 
-@media screen and (max-width: 568px) {
+@media (max-width: 568px) {
   .card-frame {
       max-width: 372px;
   }
@@ -43,10 +43,10 @@ body {
   transition: transform .25s;
 }
 
-@media screen and (max-width: 568px) {
+@media (max-width: 568px) {
   .card {
-      width: 83px;
-      height: 100px;
+      width: 70px;
+      height: 104px;
   }
 }
 /* 卡牌樣式設定 end */
@@ -71,6 +71,12 @@ body {
   width: 200%;
   height: auto;
 }
+@media (max-width: 568px) {
+  .card-front {
+    width: 69px;
+    height: 104px;
+  }
+}
 .card-back {
   width: 125px;
   height: 188px;;
@@ -88,6 +94,12 @@ body {
 .card-back img {
   height: 100%;
   width: auto;
+}
+@media (max-width: 568px) {
+  .card-back {
+    width: 69px;
+    height: 104px;
+  }
 }
 .card-front {
   transform: rotateY(180deg)  translateZ(1px);

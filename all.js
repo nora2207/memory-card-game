@@ -58,8 +58,19 @@ const cards = document.querySelectorAll('.card');
 			cardFrt.removeEventListener('click', cardChange)
 			cardScd.removeEventListener('click', cardChange)
 			reset()
+			checkpopUps()
 	}
 	// 設定當卡面圖形吻合時移除事件監聽，與重置計數器和動態變更彈跳視窗內容 end
+
+	// 設定配對成功顯示的大卡片
+	function checkpopUps(){
+		let modalText_content = document.querySelector('.header-text')
+			if (modalText_content.textContent == '') {
+					modalText_content.innerHTML = '<img src=' + cardFrt.img + '>'
+			}
+	}
+
+
 
 	// 設定如不吻合時，延遲刪除 class 動畫 start
 	// 如無設定翻轉時只要圖形不吻和另一張卡面則無法翻轉，加入lock為了翻轉時內容
