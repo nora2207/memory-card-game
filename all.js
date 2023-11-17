@@ -58,17 +58,17 @@ const cards = document.querySelectorAll('.card');
 			cardFrt.removeEventListener('click', cardChange)
 			cardScd.removeEventListener('click', cardChange)
 			reset()
-			checkpopUps()
+			// checkpopUps()
 	}
 	// 設定當卡面圖形吻合時移除事件監聽，與重置計數器和動態變更彈跳視窗內容 end
 
 	// 設定配對成功顯示的大卡片
-	function checkpopUps(){
-		let modalText_content = document.querySelector('.header-text')
-			if (modalText_content.textContent == '') {
-					modalText_content.innerHTML = '<img src=' + cardFrt.img + '>'
-			}
-	}
+	// function checkpopUps(){
+	// 	let modalText_content = document.querySelector('.header-text')
+	// 		if (modalText_content.textContent == '') {
+	// 				modalText_content.innerHTML = '<img src=' + cardFrt.img + '>'
+	// 		}
+	// }
 
 
 
